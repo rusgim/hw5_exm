@@ -25,5 +25,18 @@ public class Main {
                 System.out.println("Ребенок ходит в садик");
             }
         }
+        //задание 3
+        byte place = 102;
+        if (place >= 61) {
+            if (place <= 102) {
+                System.out.println("У вас стоячее место");
+            }
+            if (place >= 103) {
+                System.out.println("Свободных мест не осталось");
+            }
+        }
+        if (place <= 60) {
+            System.out.println("У вас сидячее место");
+        }
     }
 }
