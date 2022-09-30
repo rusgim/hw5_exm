@@ -1,42 +1,41 @@
 public class Main {
+
     public static void main(String[] args) {
         // задание 1
-        int age = 18;
+        int age = 25;
         if (age >= 18) {
             System.out.println("Поздравляем с совершеннолетием!");
-        }
-        if (age < 18) {
+        } else {
             System.out.println("Возраст совершеннолетия ещё не наступил, и нужно немного подождать");
         }
         // задание 2
-        int age1 = 7;
-        if (age1 >= 18) {
-            if (age1 < 24)
-            System.out.println("Человек уже закончил школу и может отправляться в университет");
-            if (age1 >= 24) {
-                System.out.println("Пора искать работу");
+        System.out.println(" ");
+        int age1 = 6;
+        if (age1 >= 7) {
+            if (age1 <= 23) {
+                if (age1 <= 17) {
+                    System.out.println("человек ходит в школу");
+                } else {
+                    System.out.println("Человек ходит в универ");
+                }
+            } else {
+                System.out.println("Человеку пора искать работу");
             }
-        }
-        if (age1 < 18) {
-            if (age1 >= 7) {
-                System.out.println("Ребенок ходит в школу");
-            }
-            if (age1 < 7) {
-                System.out.println("Ребенок ходит в садик");
-            }
+        } else {
+            System.out.println("Ребенок ходит в садик");
         }
         //задание 3
-        byte place = 102;
+        System.out.println(" ");
+        byte place = 61;
         if (place >= 61) {
             if (place <= 102) {
                 System.out.println("У вас стоячее место");
-            }
-            if (place >= 103) {
+            } else {
                 System.out.println("Свободных мест не осталось");
             }
-        }
-        if (place <= 60) {
+        } else {
             System.out.println("У вас сидячее место");
         }
     }
 }
+
