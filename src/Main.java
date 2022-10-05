@@ -36,6 +36,52 @@ public class Main {
         } else {
             System.out.println("У вас сидячее место");
         }
+        //задание 4
+        System.out.println(" ");
+        int age2 = 25;
+        boolean goToKindergarten = age2 <= 6 && age2 >= 2;
+        boolean goToSchool = age2 < 18 && age2 > 6;
+        if (age2 <= 24) {
+            if (age2 >= 18 && age2 <= 24) {
+                System.out.println("Если возраст человека равен " + age2 + ", то ему нужно ходить в универ");
+            } else if (goToKindergarten) {
+                System.out.println("Если возраст человека равен " + age2 + ", то ему нужно ходить в садик");
+            } else if (goToSchool) {
+                System.out.println("Если возраст человека равен " + age2 + ", то ему нужно ходить в школу");
+            }
+        } else {
+            System.out.println("Если возраст человека равен " + age2 + ", то ему нужно ходить на работу");
+        }
+        //задание 5
+        System.out.println(" ");
+        int age3 = 15 ;
+        boolean canNotRideRides = age3 <= 5;
+        boolean canGoOnRidesWithYourParents = age3 > 5 || age3 <= 14;
+        if (age3 <= 14) {
+            if (canNotRideRides) {
+                System.out.println("Тебе нельзя кататься на аттракционах");
+            } else if (canGoOnRidesWithYourParents) {
+                System.out.println("Тебе можно кататься на аттракионах только с сопровождением взрослых");
+            }
+        } else {
+            System.out.println("Тебе можно кататься без сопровождения взрослых");
+        }
+        //задание 6
+        System.out.println(" ");
+        int one = 4;
+        int two = 7;
+        int tree = 3;
+        if ( one > two) {
+            if (one > tree) {
+                System.out.println("Число " + one + " максимальное");
+            } else {
+                System.out.println("Число " + tree + " максимальное");
+            }
+        } else if (two < tree) {
+            System.out.println("Число " + tree + " максимальное");
+        } else {
+            System.out.println("Число " + two + " максимальное");
+        }
     }
 }
 
